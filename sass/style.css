@@ -1,0 +1,29 @@
+@import url(https://fonts.google.com/specimen/Space+Mono);
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+main {
+  background-color: #C5E4E7;
+  height: 100vh;
+}
+
+.bill-container {
+  background-color: #F3F8FB;
+  height: 50vh;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+button {
+  background: #004849;
+  color: #F3F8FB;
+  font-size: 20px;
+  font-family: Space Mono, sans-serif;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
