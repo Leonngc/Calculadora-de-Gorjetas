@@ -1,0 +1,29 @@
+//COLORS
+$bg-color:#C5E4E7
+$card-color: #F3F8FB
+$dark-green: #004849
+$light-green: #2DC6B1
+$gray: #F3F8FB
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap')
+$font-main: Space Mono
+$font-paragraph: 22px
+$font-title: 30px
+$font-mobile: 12px
+
+//MIXINS
+@mixin media($breakpoint) 
+  @if $breakpoint == phone 
+    @media (max-width: 599px)  
+        @content 
+  
+  @else if $breakpoint == tablet 
+    @media (min-width: 600px) and (max-width: 899px)  
+        @content 
+  
+  @else if $breakpoint == desktop 
+    @media (min-width: 900px) 
+         @content
+  
+

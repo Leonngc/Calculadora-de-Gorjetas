@@ -1,0 +1,60 @@
+@use '_core.sass'
+
+body
+    text-align: center
+
+main
+    margin-top: 50px
+    mar
+
+.container
+    width: 60vw
+    height: 60vh
+    display: flex
+    align-items: center
+    border-radius: 20px
+    @include core.media(phone)
+        width: 90vw
+        flex-direction: column
+        height: 80vh
+
+    .bill-container
+        display: flex
+        flex-wrap: wrap
+        width: 50%
+        justify-content: space-around
+        flex-direction: column
+
+        .tip-container
+            width: 95%
+            margin: 30px 0
+            button
+                margin:10px
+        @include core.media(phone)
+            width: 100%
+    .result-container
+        height: 70%
+        width: 35%
+        margin-right: 30px 
+        padding: 20px
+        border-radius: 20px 
+        @include core.media(phone)
+            width: 50%
+            height: 35%
+            margin: auto
+        span
+            font-size: 15px
+        
+        button
+            width: 230px
+            margin-top: 60px
+            @include core.media(phone)
+             width: 120px
+             margin-top: 20px
+
+    
+   
+
+
+
+
