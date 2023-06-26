@@ -1,0 +1,64 @@
+@use '_core.sass'
+
+*
+    margin: 0 auto
+    padding: 0     
+
+body
+    font-family: core.$font-main
+
+h1
+    color: core.$dark-green
+
+main
+    background-color: core.$bg-color
+    height: 100vh
+
+.container
+    background-color: core.$card-color
+    height: 50vh
+    text-align: center
+    margin-top: 10vh
+
+button
+    background: core.$dark-green
+    color: core.$gray
+    font-size: 20px
+    font-weight: bold
+    font-family: core.$font-main
+    width: 100px
+    height: 40px
+    border-radius: 5px 
+    border: none
+    &:hover
+        background-color: core.$light-green
+        color: core.$dark-green
+input
+    width: 300px
+    height: 20px
+    padding: 8px
+    font-size: core.$font-paragraph
+    border: solid 1px core.$light-green
+    border-radius: 10px
+    text-align: end
+    &:focus
+        border: solid 1px core.$light-green
+
+
+.tip-container
+    input
+        width: 100px
+        font-size: 1
+
+.result-container
+    background-color: core.$dark-green
+    color: #fff
+    font-size: core.$font-paragraph
+    .output-result
+        color: core.$light-green
+        font-size: core.$font-title
+    button
+        background-color: core.$light-green 
+        color: core.$dark-green
+        
+
