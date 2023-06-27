@@ -33,7 +33,7 @@ function result(){
             percetual = billValue 
             resultPercetual = (billValue * 5/100)
             total = billValue + resultPercetual
-            percetualPersons = resultPercetual / persons
+            percetualPersons = resultPercetual
 
             resultTip.textContent = total.toFixed(2)
             pipPerson.textContent = percetualPersons.toFixed(2)
