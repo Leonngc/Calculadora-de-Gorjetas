@@ -28,6 +28,7 @@ numberPersons.addEventListener('input', ()=>{
     result()
 })
 customTip.addEventListener('input', ()=>{
+    
     custom = parseInt(customTip.value)
     resultPercetual = (billValue * custom/100)
     percetualPersons = resultPercetual / persons

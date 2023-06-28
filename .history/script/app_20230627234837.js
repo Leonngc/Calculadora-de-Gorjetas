@@ -29,11 +29,10 @@ numberPersons.addEventListener('input', ()=>{
 })
 customTip.addEventListener('input', ()=>{
     custom = parseInt(customTip.value)
-    resultPercetual = (billValue * custom/100)
-    percetualPersons = resultPercetual / persons
+    resultPercetual = billValue * custom/100
+    pipPerson.textContent = resultPercetual / persons
     total = billValue + resultPercetual
-    resultTip.textContent = total.toFixed(2)
-    pipPerson.textContent = percetualPersons.toFixed(2)
+    resultTip
 })
 
 function result(){

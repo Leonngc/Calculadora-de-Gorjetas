@@ -1,13 +1,11 @@
 let btn = document.querySelectorAll('.pip-value')
-//TIPS
+
 let bill = document.getElementById('bill-input')
 let fourPip = document.getElementById('four-pip')
 let tenPip = document.getElementById('ten-pip')
 let fifteenPip = document.getElementById('fifteen-pip')
 let twentyfivePip = document.getElementById('twentyfive-pip')
 let fiftyPip = document.getElementById('fifty-pip')
-let customTip = document.getElementById('custom-tip')
-//COMPONENTS
 let submitBtn = document.getElementById('submit-btn')
 let resultTip = document.getElementById('output-total')
 let pipPerson = document.getElementById('output-tip')
@@ -16,7 +14,6 @@ let billValue = 0
 let resultPercetual = 0
 let percetualPersons = 0
 let persons = 0
-let custom = 0
 
 bill.addEventListener('input', ()=>{
     billValue = parseFloat(bill.value)
@@ -24,16 +21,9 @@ bill.addEventListener('input', ()=>{
 })
 
 numberPersons.addEventListener('input', ()=>{
+   
     persons = parseInt(numberPersons.value)
     result()
-})
-customTip.addEventListener('input', ()=>{
-    custom = parseInt(customTip.value)
-    resultPercetual = (billValue * custom/100)
-    percetualPersons = resultPercetual / persons
-    total = billValue + resultPercetual
-    resultTip.textContent = total.toFixed(2)
-    pipPerson.textContent = percetualPersons.toFixed(2)
 })
 
 function result(){
@@ -98,7 +88,7 @@ function result(){
                 persons = 1
             }
             percetual = billValue 
-            resultPercetual = (billValue * 50/100)
+            resultPercetual = (billValue * 10/100)
             total = billValue + resultPercetual
             percetualPersons = resultPercetual / persons
 

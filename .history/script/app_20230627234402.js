@@ -16,7 +16,6 @@ let billValue = 0
 let resultPercetual = 0
 let percetualPersons = 0
 let persons = 0
-let custom = 0
 
 bill.addEventListener('input', ()=>{
     billValue = parseFloat(bill.value)
@@ -24,16 +23,9 @@ bill.addEventListener('input', ()=>{
 })
 
 numberPersons.addEventListener('input', ()=>{
+   
     persons = parseInt(numberPersons.value)
     result()
-})
-customTip.addEventListener('input', ()=>{
-    custom = parseInt(customTip.value)
-    resultPercetual = (billValue * custom/100)
-    percetualPersons = resultPercetual / persons
-    total = billValue + resultPercetual
-    resultTip.textContent = total.toFixed(2)
-    pipPerson.textContent = percetualPersons.toFixed(2)
 })
 
 function result(){
