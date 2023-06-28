@@ -1,5 +1,3 @@
-export default {resetBtn };
-
 let btn = document.querySelectorAll('.pip-value')
 let resetBtn = document.getElementById('reset-btn')
 //TIPS
@@ -31,7 +29,10 @@ numberPersons.addEventListener('input', ()=>{
     result()
 })
 customTip.addEventListener('input', ()=>{
-    
+    if(customTip == ' '){
+        resultTip.textContent = '0,00'
+        pipPerson.textContent = '0,00'
+    }
     custom = parseInt(customTip.value)
     resultPercetual = (billValue * custom/100)
     percetualPersons = resultPercetual / persons

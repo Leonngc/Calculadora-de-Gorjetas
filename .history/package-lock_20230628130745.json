@@ -1,9 +1,8 @@
 {
   "name": "Calculadora-de-Gorjetas",
-  "description": "Projeto Frontendmentor",
-  "type":"module",
   "lockfileVersion": 2,
   "requires": true,
+  ""
   "packages": {
     "": {
       "devDependencies": {

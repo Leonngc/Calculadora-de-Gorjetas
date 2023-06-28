@@ -1,5 +1,4 @@
-export default {resetBtn };
-
+export{resetBtn}
 let btn = document.querySelectorAll('.pip-value')
 let resetBtn = document.getElementById('reset-btn')
 //TIPS
