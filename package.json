@@ -1,9 +1,10 @@
 {
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
   },
-
   "scripts": {
     "dev": "parcel ./index.html",
     "build": "parcel build ./index.html"
