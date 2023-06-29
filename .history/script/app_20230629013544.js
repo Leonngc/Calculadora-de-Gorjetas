@@ -98,8 +98,7 @@ function result(){
             resultPercetual = (billValue * 25/100)
             total = billValue + resultPercetual
             percetualPersons = resultPercetual / persons
-            perPerson = total / persons
-            totalPerson.textContent = perPerson.toFixed(2)
+
             resultTip.textContent = total.toFixed(2)
             pipPerson.textContent = percetualPersons.toFixed(2)
         })
@@ -112,8 +111,7 @@ function result(){
             resultPercetual = (billValue * 50/100)
             total = billValue + resultPercetual
             percetualPersons = resultPercetual / persons
-            perPerson = total / persons
-            totalPerson.textContent = perPerson.toFixed(2)
+
             resultTip.textContent = total.toFixed(2)
             pipPerson.textContent = percetualPersons.toFixed(2)
         })
