@@ -79,7 +79,7 @@ input:focus {
 }
 @media (max-width: 800px) {
   .result-container .output-result {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .result-container button {
