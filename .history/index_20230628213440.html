@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="sass/style.css"> 
+  <script src="script/app.js" defer></script> 
+  <script src="script/validation.js" defer></script>
+
+  <title>Gorjeta App</title>
+</head>
+<body>
+
+  <main>
+    <h1>Pip<br>.app</h1>
+    <div class="container">
+
+      <div class="bill-container">
+        <label for="bill-input">Conta R$</label>
+        <div ><input type="number" id="bill-input" class="required" min="0"></div>
+        
+        <div class="tip-container">
+          <h3>Selecione a gorjeta %</h3>
+          <button id="four-pip" class="pip-value">5%</button>
+          <button id="ten-pip" class="pip-value">10%</button>
+          <button id="fifteen-pip" class="pip-value">15%</button>
+          <button id="twentyfive-pip" class="pip-value">25%</button>
+          <button id="fifty-pip" class="pip-value">50%</button>
+          <input type="number" placeholder="Person." id="custom-tip" max="100" maxlength="3"></input>
+        </div>
+        
+        <label for="">Número de pessoas</label>
+        <input type="number" id="number-persons"  min="1" value="1">
+      </div>
+
+  <div class="result-container">
+          <div class="result" id="result-tip">
+            <span>
+              Quantia de gorjeta
+              / pessoa
+            </span>
+            <div class="output-result" id="output-tip">
+              0,00
+            </div>
+          </div>
+        
+        <div class="result" id="result-total">
+          <span>
+            Total
+            / pessoa
+          </span>
+          <div class="output-result" id="output-total">
+            0,00
+          </div>
+        </div>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    <p>
+      Desafio <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Feito por <a href="https://leonngc.github.io/nicdev/" target="_blank">Nicolas Leon</a>.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@use '_core.sass'
+  
+
+body
+    font-family: core.$font-main
+    background-color: core.$bg-color
+    &::-webkit-scrollbar
+        width: 10px
+    &::-webkit-scrollbar-track
+        background: core.$dark-green    
+    &::-webkit-scrollbar-thumb
+        background: core.$light-green
+        border-radius: 10px
+        
+
+h1
+    color: core.$dark-green
+
+main
+    height: 100vh
+
+.container
+    background-color: core.$card-color
+    height: 50vh
+    text-align: center
+    margin-top: 10vh
+
+button
+    background: core.$dark-green
+    color: core.$gray
+    font-size: 20px
+    font-weight: bold
+    font-family: core.$font-main
+    width: 100px
+    height: 40px
+    border-radius: 5px 
+    border: none
+    &:hover
+        background-color: core.$light-green
+        color: core.$dark-green
+input
+    width: 300px
+    height: 30px
+    padding: 8px
+    font-size: core.$font-paragraph
+    border: solid 1px core.$light-green
+    border-radius: 10px
+    text-align: end
+    &:focus
+        outline-color: core.$light-green
+
+
+.tip-container
+    input
+        width: 100px
+        font-size: 20px
+        @include core.media(phone)
+            padding: 20px
+
+.result-container
+    background-color: core.$dark-green
+    color: #fff
+    font-size: core.$font-paragraph
+    .output-result
+        color: core.$light-green
+        font-size: core.$font-title
+        @include core.media(phone)
+            font-size: core.$font-mobile
+
+    button
+        background-color: core.$light-green 
+        color: core.$dark-green
+
+input.empty{
+    
+    }
+    
+footer
+    margin-top: 160px 
+    font-size: core.$font-paragraph
+    color: core.$dark-green
+    background-color: core.$gray
+    padding: 40px
+    a
+        color: core.$light-green
+    
+
